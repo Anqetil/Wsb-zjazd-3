@@ -29,6 +29,7 @@ for i in range (len(content)):
 total = 0
 for i in range(1, len(content)):
     print(content[i])
-    if content[i][4] == 't\n' or content[i][4] == 't':
+    content[i][4] = content[i][4].replace('\n', '')
+    if content[i][4] == 't' and content[i][3] == 'k':
         total += 1
     print(total)
