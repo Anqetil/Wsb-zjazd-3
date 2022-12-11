@@ -13,10 +13,10 @@ for i in range (1,len(content)):
     total += int(content[i][1])
 average = total / (len(content)-1)
 print(round(average,2))
-#ile na macierzynskim
+#ile na macierzynskim kobiet
 for i in range(1,len(content)):
     if content[i][3] == 'k' and content[i][4] == 't':
-        total += 1
+        total = total + 1
         print(total)
 
 
